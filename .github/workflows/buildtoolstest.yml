@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Scala CI
+name: test build tools
 
 on:
   push:
@@ -23,4 +23,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: get build tools
       run: wget https://dl.google.com/android/repository/build-tools_r25-linux.zip
-      
+    - name: lsdirp
+      run: ls -R
